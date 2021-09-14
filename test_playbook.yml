@@ -7,4 +7,7 @@
       state: present
       name:
        - httpd
+  - name: Hello Message
+      debug:
+        msg: "Hello World!"
      
