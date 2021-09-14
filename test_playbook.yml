@@ -1,0 +1,10 @@
+- hosts: localhost
+  gather_facts: no
+  tasks:
+  - name: install packages
+    become: true
+    yum:
+      state: present
+      name:
+       - httpd
+     
